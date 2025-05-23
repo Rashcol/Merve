@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23.05.2000 - Merve'nin Günü</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fff4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            padding: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff8da1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .story {
+            padding: 20px;
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Bu tarih en güzel takvimin en güzel tarihi</h1>
+        <h2>23.05.2000</h2>
+        <button onclick="showSurprise()">Bu tarihte neler olduğunu görmek ister misin?</button>
+    </div>
+
+    <div id="surprise" class="hidden">
+        <img src="merve1.jpg" alt="Merve'nin Fotoğrafı">
+        <img src="baby.jpg" alt="Bebek Fotoğrafı">
+        <div class="story">
+            <p>Bu tarihte dünya tarihinde pek çok olay yaşanmış olabilir. Ancak 23 Mayıs 2000... bu tarih, kainatın en güzel kız çocuğunun doğduğu güne işaret eder.</p>
+            <p>Asırlarca yılların arasında en güzel yıl, en güzel gün ve en güzel kız bir araya geldi: Merve. Dünyamıza bir güneş gibi doğan bu kız, gülüşüyle baharları kıskandıran, varlığıyla en kasvetli günleri bile aydınlatan bir mucize oldu.</p>
+            <p>İyi ki doğdun Merve. Bu dünya seni tanıdığı için çok şanslı.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
