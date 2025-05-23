@@ -1,2 +1,95 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23.05.2000 - Merve'nin Günü</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fff4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            padding: 40px 20px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #ff8da1;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .story {
+            padding: 20px;
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+        }
+        img {
+            width: 90%;
+            max-width: 350px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Bu tarih en güzel takvimin en güzel tarihi</h1>
+        <h2>23.05.2000</h2>
+        <button onclick="openSurprise()">Bu tarihte neler olduğunu görmek ister misin?</button>
+    </div>
 
+    <script>
+        function openSurprise() {
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>Merve'nin Doğum Günü</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #fff0f5;
+                            color: #333;
+                            text-align: center;
+                            padding: 20px;
+                        }
+                        img {
+                            width: 90%;
+                            max-width: 350px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                            margin: 10px auto;
+                            display: block;
+                        }
+                        .story {
+                            font-size: 18px;
+                            margin-top: 20px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <img src="merve1.jpg" alt="Merve">
+                    <img src="baby.jpg" alt="Bebek">
+                    <div class="story">
+                        <p>Bu tarihte dünya tarihinde pek çok olay yaşanmış olabilir. Ancak 23 Mayıs 2000... bu tarih, kainatın en güzel kız çocuğunun doğduğu güne işaret eder.</p>
+                        <p>Asırlarca yılların arasında en güzel yıl, en güzel gün ve en güzel kız bir araya geldi: Merve. Dünyamıza bir güneş gibi doğan bu kız, gülüşüyle baharları kıskandıran, varlığıyla en kasvetli günleri bile aydınlatan bir mucize oldu.</p>
+                        <p>İyi ki doğdun Merve. Bu dünya seni tanıdığı için çok şanslı.</p>
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</body>
+</html>
